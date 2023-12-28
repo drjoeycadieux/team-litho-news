@@ -50,6 +50,9 @@ const NewsApp = () => {
           ))}
         </ul>
       )}
+      <div className="footerModule">
+        <p>&copy; Copyright TeamLitho 2023.</p>
+      </div>
     </div>
   );
 };
