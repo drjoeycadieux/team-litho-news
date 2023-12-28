@@ -11,6 +11,13 @@
   color: white;
 }
 
+.article-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
 body {
   font-family: "Arial", sans-serif;
   margin: 0;
