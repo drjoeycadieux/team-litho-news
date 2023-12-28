@@ -3,11 +3,17 @@ import "./styles.css"; // Import the CSS file
 
 const NewsApp = () => {
   const [newsData, setNewsData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const apiKey = "06b89d08762d56a13cb3b24ca1887455"; // Replace with your GNews API key
+        const apiKey = process.env.REACT_APP_GNEWS_API_KEY;
+        if (!apiKey) {
+          throw new Error("GNews API key is missing.");
+        }
+
         const apiUrl = `https://gnews.io/api/v4/top-headlines?country=ca&token=${apiKey}`;
 
         const response = await fetch(apiUrl);
@@ -15,7 +21,9 @@ const NewsApp = () => {
 
         setNewsData(data);
       } catch (error) {
-        console.error("Error fetching news data:", error);
+        setError(error.message);
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -28,6 +36,11 @@ const NewsApp = () => {
         <p>TeamLitho - News</p>
       </div>
       <h1>Top Headlines</h1>
+
+      {loading && <p>Loading...</p>}
+
+      {error && <p>Error: {error}</p>}
+
       {newsData && (
         <ul>
           {newsData.articles.map((article, index) => (
@@ -50,6 +63,7 @@ const NewsApp = () => {
           ))}
         </ul>
       )}
+
       <div className="footerModule">
         <p>&copy; Copyright TeamLitho 2023.</p>
       </div>
