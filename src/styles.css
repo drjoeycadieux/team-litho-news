@@ -70,3 +70,15 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.footerModule {
+  background-color: #007bff;
+  padding: 25px;
+}
+
+.footerModule p {
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
