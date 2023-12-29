@@ -9,6 +9,8 @@
   color: white;
   font-weight: bold;
   border-radius: 15px;
+  width: 600px;
+  margin: auto;
 }
 
 #error {
