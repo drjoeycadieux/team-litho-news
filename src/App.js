@@ -15,7 +15,7 @@ const NewsApp = () => {
           throw new Error("GNews API key is missing.");
         }
 
-        const apiUrl = `https://gnews.io/api/v4/world?country=ca&token=${apiKey}`;
+        const apiUrl = `https://gnews.io/api/v4/top-headlines?country=ca&token=${apiKey}`;
 
         const response = await fetch(apiUrl);
         const data = await response.json();
@@ -34,7 +34,7 @@ const NewsApp = () => {
   return (
     <div>
       <div className="alerts">
-        <p>Breaking News!, These are the world wide news.</p>
+        <p>Breaking News!</p>
       </div>
       <div className="header">
         <p>TeamLitho - News</p>
