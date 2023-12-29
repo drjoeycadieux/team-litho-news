@@ -3,6 +3,16 @@
   background-color: #007bff;
 }
 
+.alerts {
+  padding: 10px;
+  background-color: darkblue;
+}
+
+.alerts p {
+  color: white;
+  font-family: sans-serif;
+}
+
 .header p {
   text-align: center;
   font-family: sans-serif;
