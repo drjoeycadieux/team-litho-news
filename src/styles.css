@@ -3,6 +3,13 @@
   background-color: #007bff;
 }
 
+#error {
+  color: red;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 22px;
+}
+
 .alerts {
   padding: 10px;
   background-color: darkblue;
