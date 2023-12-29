@@ -59,7 +59,9 @@ const NewsApp = () => {
                 )}
               </div>
               <h2>{article.title}</h2>
+              <h4>{article.name}</h4>
               <p>{article.description}</p>
+              <h3>{article.publishedAt}</h3>
               <a href={article.url} target="_blank" rel="noopener noreferrer">
                 Read more
               </a>
