@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "./styles.css"; // Import the CSS file
+
+import "./styles.css";
 
 const NewsApp = () => {
   const [newsData, setNewsData] = useState(null);
