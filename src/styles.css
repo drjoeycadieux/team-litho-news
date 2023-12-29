@@ -3,6 +3,14 @@
   background-color: #007bff;
 }
 
+#btn {
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
 #error {
   color: red;
   font-weight: bold;
