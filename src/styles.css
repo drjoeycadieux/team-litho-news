@@ -4,13 +4,15 @@
 }
 
 #btn {
-  padding: 15px;
-  background-color: #007bff;
+  background-color: #0449aa; /* Green */
+  border: none;
   color: white;
-  font-weight: bold;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
   border-radius: 15px;
-  width: 800px;
-  margin: left;
+  display: inline-block;
+  font-size: 16px;
 }
 
 #error {
