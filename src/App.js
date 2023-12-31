@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-// components
-import DataBoxes from "./components/DataBoxes";
-
 import "./styles.css";
 
 const NewsApp = () => {
@@ -77,10 +74,6 @@ const NewsApp = () => {
           ))}
         </ul>
       )}
-
-      <div className="covid-api">
-        <DataBoxes />
-      </div>
       <div className="footerModule">
         <p>&copy; Copyright TeamLitho 2023.</p>
       </div>
