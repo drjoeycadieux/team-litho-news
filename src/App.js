@@ -33,9 +33,9 @@ const NewsApp = () => {
 
   return (
     <div>
-      <div className="alerts">
+      {/* <div className="alerts">
         <p>Breaking News!</p>
-      </div>
+      </div> */}
       <div className="header">
         <p>TeamLitho - News</p>
       </div>
